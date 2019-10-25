@@ -23,7 +23,7 @@
             <div class="carousel-inner" role="listbox">
                 <div v-for="i in num_carousel" class="carousel-item"  v-bind:class="{ active: i==1 }">
                     <div class="row">
-                        <div class="col-3" v-for="j in regresa_partes(1, 4)">
+                        <div class="col-3" v-for="j in regresa_partes(((i*4)-4), (i*4))">
                             <div class="card">
                                 <p>{{j.title}}</p>
                                 <p>{{j.descripcion}}</p>
